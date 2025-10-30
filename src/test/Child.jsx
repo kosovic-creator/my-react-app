@@ -1,9 +1,15 @@
-import React from 'react'
+import React, { useState } from "react";
 
-const ChilsPage = () => {
+const Child = ({ onChange }) => {
+  const handleInputChange = (e) => {
+    onChange(e.target.value);
+  };
+
   return (
-    <div>ChilsPage</div>
-  )
-}
+    <div>
+      <input type="text" onChange={handleInputChange} placeholder="Upiši nešto" />
+    </div>
+  );
+};
 
-export default ChilsPage
+export default Child;
