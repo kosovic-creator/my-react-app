@@ -1,5 +1,3 @@
-import React, { useState } from "react";
-
 const Child = ({ onChange }) => {
   const handleInputChange = (e) => {
     onChange(e.target.value);
