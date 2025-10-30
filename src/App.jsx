@@ -1,5 +1,7 @@
 import './App.css';
 import TestPage from './test/TestPage';
+import ChilsPage from './test/Child';
+import ParentPage from './test/Parent';
 import Parent from './components/Parent';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
@@ -15,6 +17,8 @@ function App() {
         <Route path="/" element={<Home />} />
          <Route path="/parent" element={<Parent />} />
           <Route path="/test" element={<TestPage />} />
+           <Route path="/test/child" element={<ChilsPage />} />
+           <Route path="/test/parent" element={<ParentPage />} />
         <Route path="/about" element={<About />} />
       </Routes>
     </Router>
