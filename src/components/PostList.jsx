@@ -7,9 +7,7 @@ import './PostList.css'
 const PostList = () => {
   // Stanje za listu postova - inicijalno sa dva posta
   const [posts, setPosts] = useState([
-    { author: "drasko", content: "Hello world" },
-    { author: "johndoe", content: "Lorem ipsum" },
-  ])
+    ])
 
   // Funkcija za dodavanje novog posta u listu
   const addNewPost = (author, content) => {

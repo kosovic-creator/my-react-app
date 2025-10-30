@@ -1,10 +1,11 @@
 import './App.css';
-import PostList from './components/PostList';
+import Parent from './components/Parent';
 
 function App() {
   return (
     <div className="App">
-     <PostList />
+     {/* <PostList /> */}
+     <Parent />
     </div>
   );
 }
