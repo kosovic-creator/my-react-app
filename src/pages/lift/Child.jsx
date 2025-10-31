@@ -6,10 +6,7 @@ const ChildLiftPage = ({ onChange, broj }) => {
 
   return (
     <>
-      {/* <div>
-        <h2>Child Component</h2>
-        <input type="text"  onChange={handleInputChange} placeholder="Upiši nešto ovo je child strana" />
-      </div> */}
+    
       <div>
         <h2>Child Component broj</h2>
         <input
