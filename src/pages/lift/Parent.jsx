@@ -1,20 +1,20 @@
-
 import React, { useState } from "react";
 import Child from "./Child";
 
-const ParentPage = () => {
-  const [parentState, setParentState] = useState("");
+const ParentLiftPage = () => {
+  const [broj, setBroj] = useState("");
 
-  const handleChildChange = (value) => {
-    setParentState(value);
+  const handleBrojChange = (value) => {
+    setBroj(value);
   };
 
   return (
     <div>
-      <h1>Parent State: {parentState}</h1>
-      <Child onChange={handleChildChange} />
+      <h1>Parent Component</h1>
+      <p>Broj iz childa: {broj}</p>
+      <Child onChange={handleBrojChange} broj={broj} />
     </div>
   );
 };
 
-export default ParentPage;
+export default ParentLiftPage;

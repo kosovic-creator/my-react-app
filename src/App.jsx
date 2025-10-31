@@ -1,6 +1,7 @@
 import './App.css';
 import HomePage from './pages/Home';
-import ChilsPage from './pages/lift/Child';
+import ChildLiftPage from './pages/lift/Child';
+import ParentLiftPage from './pages/lift/Parent';
 import ChildPage from './pages/props/Child';
 import ParentPage from './pages/props/Parent';
 
@@ -17,8 +18,8 @@ function App() {
       <Routes>
 
         <Route path="/" element={<HomePage />} />
-        <Route path="/lift/child" element={<ChilsPage />} />
-        <Route path="/lift/parent" element={<ParentPage />} />
+        <Route path="/lift/child" element={<ChildLiftPage />} />
+        <Route path="/lift/parent" element={<ParentLiftPage />} />
         <Route path="/props/child" element={<ChildPage />} />
         <Route path="/props/parent" element={<ParentPage />} />
         <Route path="*" element={<h2>Stranica nije pronađena</h2>} />
