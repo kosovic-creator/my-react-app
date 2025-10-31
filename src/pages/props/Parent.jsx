@@ -7,7 +7,7 @@ const Parent = () => {
 
   return (
     <>
-    <Child ime={ime} sabiranje={(a, b) => a + b} napisiLog={() => console.log('uauau')} />
+    <Child ime={ime} sabiranje={(a, b) => a + b} log_child={() => console.log('uauau')} />
     <div>Parent</div>
     <input type="text"
     placeholder="Unesi ime u parentu ide u child"
