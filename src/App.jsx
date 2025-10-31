@@ -1,8 +1,9 @@
 import './App.css';
-import TestPage from './test/TestPage';
-import ChilsPage from './test/Child';
-import ParentPage from './test/Parent';
-import Parent from './components/Parent';
+import HomePage from './pages/Home';
+import ChilsPage from './pages/lift/Child';
+import ChildPage from './pages/props/Child';
+import ParentPage from './pages/props/Parent';
+
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 
@@ -14,17 +15,19 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Home />} />
-         <Route path="/parent" element={<Parent />} />
-          <Route path="/test" element={<TestPage />} />
-           <Route path="/test/child" element={<ChilsPage />} />
-           <Route path="/test/parent" element={<ParentPage />} />
-        <Route path="/about" element={<About />} />
+
+        <Route path="/" element={<HomePage />} />
+        <Route path="/lift/child" element={<ChilsPage />} />
+        <Route path="/lift/parent" element={<ParentPage />} />
+        <Route path="/props/child" element={<ChildPage />} />
+        <Route path="/props/parent" element={<ParentPage />} />
+        <Route path="*" element={<h2>Stranica nije pronađena</h2>} />
+
       </Routes>
     </Router>
   );
 }
 
-const Home = () => <h2>Početna</h2>;
-const About = () => <h2>O nama</h2>;
+// const Home = () => <h2>Početna</h2>;
+// const About = () => <h2>O nama</h2>;
 

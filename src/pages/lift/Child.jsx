@@ -5,7 +5,7 @@ const Child = ({ onChange }) => {
 
   return (
     <div>
-      <input type="text" onChange={handleInputChange} placeholder="Upiši nešto" />
+      <input type="text" onChange={handleInputChange} placeholder="Upiši nešto ovo je child strana" />
     </div>
   );
 };

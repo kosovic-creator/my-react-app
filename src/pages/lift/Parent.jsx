@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import Child from "./Child";
 
-const Parent = () => {
+const ParentPage = () => {
   const [parentState, setParentState] = useState("");
 
   const handleChildChange = (value) => {
@@ -17,4 +17,4 @@ const Parent = () => {
   );
 };
 
-export default Parent;
+export default ParentPage;
